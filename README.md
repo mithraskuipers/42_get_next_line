@@ -1,5 +1,6 @@
-# get_next_line
-Get_next_line (42cursus) 2019-2020
+<p align="center">
+<img width="" height="" src="https://github.com/mithraskuipers/mithraskuipers/blob/master/readme_srcs/42/logo.png?raw=true">
+</p>
 
 ## Status
 
