@@ -16,31 +16,19 @@
 
 ### Compiling
 
-Run the following commands:
+Single file descriptor:
+`gcc main.c src/get_next_line.c src/get_next_line_utils.c`
 
-* To compile
-	- `make`
-* To remove objects:
-	- 'make clean'
-* To remove objects and binary file (program):
-	- 'make fclean'
-* To re-compile:
-	- 'make re'
+Multiple file descriptors:
+`gcc main.c src/get_next_line_bonus.c src/get_next_line_utils_bonus.c`
 
 ### Executing
 
-To test the function, compile with main.c.
+Single file descriptor:
+`./a.out ./file.txt`
 
-`gcc main.c src/get_next_line.c`
-
-`./a.out tests/some_lines.txt`
-
-If wanted to test with multiple file descriptors, compile with
-main-multiple-fds.c
-
-`gcc main-multiple-fds.c src/get_next_line.c`
-
-`./a.out tests/some_lines.txt tests/nl_and_eof_one.txt`
+Multiple file descriptors:
+`./a.out ./file1.txt ./file2.txt`
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
