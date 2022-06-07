@@ -2,6 +2,13 @@
 <img width="" height="" src="https://github.com/mithraskuipers/mithraskuipers/blob/master/readme_srcs/42/logo.png?raw=true">
 </p>
 
+# Index
+
+*  [What is get_next_line](#What-is-get_next_line)
+*  [Technologies](#Technologies)
+*  [Third-party testers](#Third-party-testers)
+*  [How to Run](#How-to-Run)
+
 ## Status
 
 - Status  : Completed
@@ -12,7 +19,7 @@
 Run the following commands:
 
 * To compile
-	- '''make'''
+	- `make`
 * To remove objects:
 	- 'make clean'
 * To remove objects and binary file (program):
