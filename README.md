@@ -11,7 +11,7 @@ Get_next_line (42cursus) 2019-2020
 Run the following commands:
 
 * To compile
-	- 'make'
+	- '''make'''
 * To remove objects:
 	- 'make clean'
 * To remove objects and binary file (program):
