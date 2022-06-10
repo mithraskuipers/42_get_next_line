@@ -6,8 +6,6 @@
 <img src="https://forthebadge.com/images/badges/made-with-c.svg"/><img src="https://forthebadge.com/images/badges/built-with-love.svg"/>
 </p>
 
-<a href="mailto:mithraskuipers@gmail.com"><img align=center src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a> <a href="https://www.linkedin.com/in/mithraskuipers/"><img align=center src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-
 ## :book: About the project
 
 <em>Summary</em>: This project is about programming a function that returns a line read from a file descriptor.
@@ -94,3 +92,7 @@ int main(void)
 	return (0);
 }
 ```
+
+#### Questions?
+Please connect with me on LinkedIn or send an e-mail.
+<a href="mailto:mithraskuipers@gmail.com"><img align=center src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a> <a href="https://www.linkedin.com/in/mithraskuipers/"><img align=center src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
