@@ -11,7 +11,7 @@
 
 ## Status
 
-- Status  : Completed
+- Status  : [![mikuiper's 42 get_next_line Score](https://badge42.vercel.app/api/v2/cl483ajsd008309l6suq9l256/project/2408180)](https://github.com/mithraskuipers)
 - Result  : 112%
 
 ### Compiling
