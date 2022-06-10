@@ -6,9 +6,7 @@
 <img src="https://forthebadge.com/images/badges/made-with-c.svg"/><img src="https://forthebadge.com/images/badges/built-with-love.svg"/>
 </p>
 
-[![mikuiper's 42 stats](https://badge42.herokuapp.com/api/stats/mikuiper?darkmode=true&cursus=C%20Piscine)](https://github.com/mithraskuipers/mithraskuipers)
-
-[![mikuiper's 42 stats](https://badge42.herokuapp.com/api/stats/mikuiper?darkmode=true&privacyEmail=true)](https://github.com/mithraskuipers/mithraskuipers)
+<a href="mailto:mithraskuipers@gmail.com"><img align=center src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a> <a href="https://www.linkedin.com/in/mithraskuipers/"><img align=center src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
 ## :book: About the project
 
