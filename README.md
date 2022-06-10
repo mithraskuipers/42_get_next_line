@@ -1,33 +1,96 @@
-<p align="center">
-<img width="" height="" src="https://github.com/mithraskuipers/mithraskuipers/blob/master/readme_srcs/42/logo.png?raw=true">
-</p>
+<p align="center" style="margin-bottom: 0px !important;">
+  <img width="600" src="https://github.com/mithraskuipers/mithraskuipers/blob/master/readme_srcs/42/logo.png?raw=true" alt="42_Network_Amsterdam" align="center"> </p>
+<h1 align="center" style="margin-top: 0px;">Get Next Line <a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/cl483ajsd008309l6suq9l256/project/2408180" alt="mikuiper's 42 get_next_line Score" /></a></h1>
 
-# Index
+## :book: About the project
 
-*  [What is get_next_line](#What-is-get_next_line)
-*  [Technologies](#Technologies)
-*  [Third-party testers](#Third-party-testers)
-*  [How to Run](#How-to-Run)
+<em>Summary</em>: This project is about programming a function that returns a line read from a file descriptor.
 
-## Status
+<em>Goals</em>: This project will not only allow you to add a very convenient function to your collection, but it will also make you learn a highly interesting new concept in  C  programming: static variables.
 
-- Status  : [![mikuiper's 42 get_next_line Score](https://badge42.vercel.app/api/v2/cl483ajsd008309l6suq9l256/project/2408180)](https://github.com/mithraskuipers)
+<table>
+<tbody>
+<tr>
+<td>Function name</td>
+<td>get_next_line</td>
+</tr>
+<tr>
+<td>Prototype</td>
+<td>char *get_next_line(int fd);</td>
+</tr>
+<tr>
+<td>Turn in files</td>
+<td>get_next_line.c, get_next_line_utils.c, get_next_line.h</td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td>fd: The file descriptor to read from</td>
+</tr>
+<tr>
+<td>Return value</td>
+<td>
+<p>Read line: correct behavior</p>
+<p>NULL: there is nothing else to read, or an error occurred</p>
+</td>
+</tr>
+<tr>
+<td>External functs.</td>
+<td>read, malloc, free</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Write a function that returns a line read from a file descriptor</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 
-### Compiling
+##  Usage
 
-Single file descriptor:
-`gcc main.c src/get_next_line.c src/get_next_line_utils.c`
+### :computer: Requirements
 
-Multiple file descriptors:
-`gcc main.c src/get_next_line_bonus.c src/get_next_line_utils_bonus.c`
+**`gcc` compiler**
 
-### Executing
+### :hammer_and_wrench: Building
 
-Single file descriptor:
-`./a.out ./file.txt`
+To use the get_next_line function in your code, include its header:
 
-Multiple file descriptors:
-`./a.out ./file1.txt ./file2.txt`
+```C
+#include "get_next_line.h"
+```
+And at compilation time, add the corresponding source files and an optional BUFFER_SIZE flag (default = 42).
+
+
+```bash
+get_next_line.c get_next_line_utils.c -D BUFFER_SIZE=<size>
+```
+
+### :runner: Running
+
+To use the code, provide a main that obtains a file descriptor using open() and uses that file descriptor as the get_next_line function argument. For example..
+
+```bash
+int main(void)
+{
+	char *line;
+	int i;
+	int fd;
+	fd1 = open("files/file.txt", O_RDONLY);
+	i = 0;
+	while (i < 10)
+	{
+		line = get_next_line(fd);
+		printf("line [%d]: %s", i, line);
+		free(line);
+		i++;
+	}
+	close(fd);
+	return (0);
+}
+```
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
