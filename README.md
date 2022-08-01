@@ -67,7 +67,7 @@ And at compilation time, add the corresponding source files and an optional BUFF
 
 
 ```bash
-get_next_line.c get_next_line_utils.c -D BUFFER_SIZE=<size>
+gcc get_next_line.c get_next_line_utils.c -D BUFFER_SIZE=<size>
 ```
 
 ### :runner: Running
