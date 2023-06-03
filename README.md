@@ -11,7 +11,7 @@
 
 <em>Summary</em>: This project is about programming a function that returns a line read from a file descriptor.
 
-<em>Goals</em>: This project will not only allow you to add a very convenient function to your collection, but it will also make you learn a highly interesting new concept in  C  programming: static variables.
+<em>Goals</em>: This project will not only allow you to add a very convenient function to your collection, but it will also make you learn a highly interesting new concept in C programming: static variables.
 
 <table>
 <tbody>
@@ -50,52 +50,50 @@
 </table>
 <p>&nbsp;</p>
 
-##  Usage
+## Usage
+
+To use the `get_next_line` function in your code, follow the steps below:
 
 ### :computer: Requirements
 
-**`gcc` compiler**
+- `gcc` compiler
 
 ### :hammer_and_wrench: Building
 
-To use the get_next_line function in your code, include its header:
+1. Clone the repository that contains the `get_next_line` project.
+2. Navigate to the root of the repository in your terminal.
+3. Compile the project by running the following command, adding the corresponding source files and an optional `BUFFER_SIZE` flag (default = 42):
 
-```C
+   ```bash
+   gcc get_next_line.c get_next_line_utils.c -D BUFFER_SIZE=<size>
+   ```
+
+:runner: Running
+
+After successfully building the project, you can include the `get_next_line` function in your own C program. Follow the steps below:
+
+1. In your C program, include the header file `get_next_line.h` to access the `get_next_line` function.
+
+2. Use the `get_next_line` function in your code, providing the file descriptor (fd) of the file you want to read from.
+
+Here's an example of how to use `get_next_line` in a C program:
+
+```c
 #include "get_next_line.h"
-```
-And at compilation time, add the corresponding source files and an optional BUFFER_SIZE flag (default = 42).
+#include <stdio.h>
+#include <fcntl.h>
 
-
-```bash
-gcc get_next_line.c get_next_line_utils.c -D BUFFER_SIZE=<size>
-```
-
-### :runner: Running
-
-To use the code, provide a main that obtains a file descriptor using open() and uses that file descriptor as the get_next_line function argument. For example..
-
-```bash
 int main(void)
 {
-	char *line;
-	int i;
-	int fd;
-	fd1 = open("files/file.txt", O_RDONLY);
-	i = 0;
-	while (i < 10)
-	{
-		line = get_next_line(fd);
-		printf("line [%d]: %s", i, line);
-		free(line);
-		i++;
-	}
-	close(fd);
-	return (0);
+    char *line;
+    int fd;
+    fd = open("file.txt", O_RDONLY);
+    while ((line = get_next_line(fd)) != NULL)
+    {
+        printf("%s\n", line);
+        free(line);
+    }
+    close(fd);
+    return 0;
 }
-```
 
-#### Questions?
-Please connect with me on LinkedIn or send an e-mail.
-
-<a href="https://www.linkedin.com/in/mithraskuipers/"><img align=center src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:mithraskuipers@gmail.com"><img align=center src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
